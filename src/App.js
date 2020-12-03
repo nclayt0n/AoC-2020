@@ -62,6 +62,12 @@ const App = () => {
 
                     <ul className="nav flex-column">
                     <li className="nav-item">
+                            <NavLink className="nav-link" activeClass="active" to="/">
+                                <FaFileAlt />
+                                <span>Home</span>
+                            </NavLink>
+                        </li>
+                    <li className="nav-item">
                             <NavLink className="nav-link" activeClass="active" to="/day-one">
                                 <FaFileAlt />
                                 <span>Day One</span>
