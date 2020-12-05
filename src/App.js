@@ -6,8 +6,10 @@ import HomePage from './pages/Home';
 import DayOne from './pages/DayOne';
 import DayTwo from './pages/DayTwo';
 import DayThree from './pages/DayThree';
+import DayFour from './pages/DayFour';
 
-import { FaFileAlt, FaChevronLeft } from 'react-icons/fa';
+
+import { FaChevronLeft,FaTree,FaHome } from 'react-icons/fa';
 
 export const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -61,28 +63,34 @@ const App = () => {
                     </div>
 
                     <ul className="nav flex-column">
-                    <li className="nav-item">
+                        <li className="nav-item">
                             <NavLink className="nav-link" activeClass="active" to="/">
-                                <FaFileAlt />
+                                <FaHome />
                                 <span>Home</span>
                             </NavLink>
                         </li>
-                    <li className="nav-item">
+                        <li className="nav-item">
                             <NavLink className="nav-link" activeClass="active" to="/day-one">
-                                <FaFileAlt />
+                                <FaTree />
                                 <span>Day One</span>
                             </NavLink>
                         </li>
-                    <li className="nav-item">
+                        <li className="nav-item">
                             <NavLink className="nav-link" activeClass="active" to="/day-two">
-                                <FaFileAlt />
+                                <FaTree />
                                 <span>Day Two</span>
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" activeClass="active" to="/day-three">
-                                <FaFileAlt />
+                                <FaTree />
                                 <span>Day Three</span>
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" activeClass="active" to="/day-four">
+                                <FaTree />
+                                <span>Day Four</span>
                             </NavLink>
                         </li>
                     </ul>
@@ -106,6 +114,10 @@ const App = () => {
                         <Route path="/day-three">
                             <ScrollToTop />
                             <DayThree />
+                        </Route>
+                        <Route path="/day-four">
+                            <ScrollToTop />
+                            <DayFour />
                         </Route>
                     </Switch>
                 </main>
