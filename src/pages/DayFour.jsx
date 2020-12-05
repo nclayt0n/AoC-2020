@@ -128,7 +128,7 @@ const DayFour = () => {
                 </thead>
                 <tbody>
                     {puzzleTwo?.map((passport) => (
-                        <tr>
+                        <tr key={passport.pid}>
                             <td>{passport.byr}</td>
                             <td>{passport.ecl}</td>
                             <td>{passport.eyr}</td>

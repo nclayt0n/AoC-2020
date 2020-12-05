@@ -7,6 +7,7 @@ import DayOne from './pages/DayOne';
 import DayTwo from './pages/DayTwo';
 import DayThree from './pages/DayThree';
 import DayFour from './pages/DayFour';
+import DayFive from './pages/DayFive';
 
 
 import { FaChevronLeft,FaTree,FaHome } from 'react-icons/fa';
@@ -93,6 +94,12 @@ const App = () => {
                                 <span>Day Four</span>
                             </NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" activeClass="active" to="/day-five">
+                                <FaTree />
+                                <span>Day Five</span>
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -118,6 +125,10 @@ const App = () => {
                         <Route path="/day-four">
                             <ScrollToTop />
                             <DayFour />
+                        </Route>
+                        <Route path="/day-five">
+                            <ScrollToTop />
+                            <DayFive />
                         </Route>
                     </Switch>
                 </main>
