@@ -36,7 +36,6 @@ const dayFivePuzzleOne = (arr) => {
             });
             list.push(num);
         });
-    console.log();
     return list.sort((a, b) => a - b);
 };
 let puzzleOne = dayFivePuzzleOne(boardingPasses);
